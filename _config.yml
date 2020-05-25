@@ -9,10 +9,10 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Centrarium
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
-email: blcentra@gmail.com
-name: Ben Centra
+title: 영쓰의 개발로그
+subtitle: "Subtitle 업데이트 테스트"
+email: xoxodudwkd@gmail.com
+name: Jang Taeyoung
 description: >
   A simple yet classy theme for your Jekyll website or blog.
 # Base URL of site (i.e. /blog). It should always start with a slash,
@@ -60,6 +60,9 @@ descriptions:
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
+  - cat: til
+    dest: "Today I Learned"
+
 # Social icons and sharing options
 #
 # Social settings are used in two places:
@@ -79,7 +82,7 @@ social:
   - name: Twitter
     icon: twitter
     username: TheBenCentra
-    url: https://twitter.com/TheBenCentra
+    url: ""
     desc: Follow me on Twitter
     share: true
 
@@ -93,14 +96,14 @@ social:
   - name: GitHub
     icon: github
     username: bencentra
-    url: https://github.com/bencentra
+    url: https://github.com/taeyoungs
     desc: Fork me on GitHub
     share: false
 
   - name: LinkedIn
     icon: linkedin
     username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    url: ""
     desc: Connect with me on LinkedIn
     share: true
 
