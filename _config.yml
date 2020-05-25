@@ -95,7 +95,7 @@ social:
 
   - name: GitHub
     icon: github
-    username: bencentra
+    username: taeyoungs
     url: https://github.com/taeyoungs
     desc: Fork me on GitHub
     share: false
@@ -196,8 +196,8 @@ social:
 # OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
     fb_image: "/assets/logo.png"
-    fb_image_width: 612
-    fb_image_height: 605
+    fb_image_width: 512
+    fb_image_height: 512
     fb_image_type: "image/png"
 
     twitter_image: "/assets/logo.png"
