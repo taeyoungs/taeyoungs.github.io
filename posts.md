@@ -1,18 +1,28 @@
 ---
 layout: page
-title: "Posts"
+title: Posts
 permalink: /posts/
 main_nav: true
 ---
 
+<h2>Categories</h2>
+<div class="tagsBox">
+  {% for tag in site.tags %}
+  <a href="{{ site.baseurl }}/tag/{{ tag | first }}" class="tagLink">
+    <span class="tagBtn">{{tag | first}}</span>
+  </a>
+  {% endfor %}
+</div>
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
-  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+  <h2 id="{{cat}}">{{ cat | capitalize }} <span class="postCnt">({{site.categories[cat].size}})</span></h2>
+  <p>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
       <p class="desc"><em>{{ desc.desc }}</em></p>
     {% endif %}
   {% endfor %}
+  </p>
   <ul class="posts-list">
   {% for post in site.categories[cat] %}
     <li>

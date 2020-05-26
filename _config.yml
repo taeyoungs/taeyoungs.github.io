@@ -10,16 +10,16 @@ exclude:
 
 # Site settings
 title: 영쓰의 개발로그
-subtitle: "Subtitle 업데이트 테스트"
+subtitle: "1. 의미있는 commit msg 남기기<br/>2. 계획 속에서 살기<br/>3. TIL로 자신의 가치 높이기"
 email: xoxodudwkd@gmail.com
 name: Jang Taeyoung
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  반갑습니다. 개발자를 꿈꾸는 장태영입니다.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "https://taeyoungs.github.io" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
@@ -54,14 +54,23 @@ jekyll-archives:
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: Jekyll
+  - cat: jekyll
     desc: "Posts describing Jekyll setup techniques."
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
-
   - cat: til
-    dest: "Today I Learned"
+    desc: "Today I Learned."
+
+  - cat: python
+    desc: "Python Posts"
+
+  - cat: react
+    desc: "React Posts"
+
+  - cat: wod (crossfit)
+    desc: "Today's Wod"
+
+  - cat: graphql
+    desc: "GraphQL Posts"
 
 # Social icons and sharing options
 #
@@ -205,3 +214,6 @@ protocols:
     os_repo: "https://github.com/bencentra/centrarium.com"
     os_rcs_type: "git"
     os_src: "git@github.com:bencentra/centrarium.com.git"
+
+    
+disqus_shortname: taeyoungs

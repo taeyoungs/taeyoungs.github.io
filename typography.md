@@ -5,7 +5,8 @@ permalink: /typography/
 main_nav: true
 ---
 
-<p>The purpose of this HTML is to help determine what default settings are with Bitters and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
+<p>~~대체할 페이지 구상 중~~</p>
+<p>구상 완료. 대체할 페이지 업로드 예정 🛸</p>
 
 <hr>
 

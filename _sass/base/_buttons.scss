@@ -29,3 +29,25 @@ button {
     opacity: 0.5;
   }
 }
+
+.tagBtn {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: $action-color;
+  color: rgba(20, 20, 20, 1);
+  padding: 3px 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 14px;
+}
+
+.tagLink {
+  :hover {
+    font-weight: 600;
+  }
+}
+
+.tagsBox {
+  display: flex;
+  margin-bottom: 50px;
+}

@@ -261,8 +261,11 @@ pre code.hljs {
 		.site-header{
 			.title {
 				font-size: modular-scale(6);
+				height: 100px;
 			}
 			.subtitle {
+				position: relative;
+				top: 30px;
 				font-style: italic;
 				font-size: modular-scale(1);
 			}
@@ -289,7 +292,16 @@ pre code.hljs {
 			padding-bottom: 1em;
 		}
 		.post-content {
+			font-family: $post-font-family;
 			padding: 1em 0;
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				font-family: $post-font-family;
+			}
 		}
 		.tags {
 			font-size: 0.9em;
@@ -450,4 +462,10 @@ pre code.hljs {
 			text-decoration: underline;
 		}
 	}
+}
+
+.postCnt {
+	margin: 0 10px;
+	font-size: 18px;
+	color: #999;
 }
