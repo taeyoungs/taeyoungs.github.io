@@ -9,12 +9,12 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: 영쓰의 개발로그
+title: Youngslog
 subtitle: "1. 의미있는 commit msg 남기기<br/>2. 계획 속에서 살기<br/>3. TIL로 자신의 가치 높이기"
 email: xoxodudwkd@gmail.com
 name: Jang Taeyoung
 description: >
-  반갑습니다. 개발자를 꿈꾸는 장태영입니다.
+  Powered by Jekyll, Netlify | Theme - Centrarium
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
