@@ -19,7 +19,7 @@ description: >
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://taeyoungs.github.io" # the base hostname & protocol for your site
+url: "https://youngslog.kr" # the base hostname & protocol for your site
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
@@ -61,10 +61,10 @@ descriptions:
     desc: "Today I Learned."
 
   - cat: python
-    desc: "Python Posts"
+    desc: "Python, Django Posts"
 
   - cat: react
-    desc: "React Posts"
+    desc: "React, React-Native, Hooks, Redux Posts"
 
   - cat: wod (crossfit)
     desc: "Today's Wod"
