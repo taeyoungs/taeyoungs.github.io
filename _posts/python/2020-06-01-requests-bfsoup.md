@@ -4,6 +4,7 @@ title:  "requests, BeautifulSoup"
 date: Mun June 1 2020 23:40:20 GMT+0900
 author: Jang Taeyoung
 categories: python
+tags: python, module
 cover: "/assets/python.png"
 ---
 
