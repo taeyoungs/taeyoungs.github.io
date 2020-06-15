@@ -63,8 +63,8 @@ descriptions:
   - cat: react
     desc: "React, React-Native, Hooks, Redux Posts"
 
-  - cat: wod (crossfit)
-    desc: "Today's Wod"
+  - cat: algorithm
+    desc: "Algorithm Quiz | Answer"
 
   - cat: graphql
     desc: "GraphQL Posts"
