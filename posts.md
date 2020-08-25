@@ -8,9 +8,9 @@ main_nav: true
 <h2>Categories</h2>
 <div class="tagsBox">
   {% for tag in site.tags %}
-  <a href="{{ site.baseurl }}/tag/{{ tag | first }}" class="tagLink">
-    <span class="tagBtn">{{tag | first}}</span>
-  </a>
+    <a href="{{ site.baseurl }}/tag/{{ tag | first }}" class="tagLink">
+      <span class="tagBtn">{{tag | first}}</span>
+    </a>
   {% endfor %}
 </div>
 {% for category in site.categories %}

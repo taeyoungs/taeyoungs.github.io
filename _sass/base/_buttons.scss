@@ -1,53 +1,56 @@
 #{$all-button-inputs},
 button {
-  @include appearance(none);
-  -webkit-font-smoothing: antialiased;
-  background-color: $action-color;
-  border-radius: $base-border-radius;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.75em 1em;
-  text-decoration: none;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
+	@include appearance(none);
+	-webkit-font-smoothing: antialiased;
+	background-color: $action-color;
+	border-radius: $base-border-radius;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	font-weight: 600;
+	line-height: 1;
+	padding: 0.75em 1em;
+	text-decoration: none;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
 
-  &:hover,
-  &:focus {
-    background-color: darken($action-color, 15%);
-    color: #fff;
-  }
+	&:hover,
+	&:focus {
+		background-color: darken($action-color, 15%);
+		color: #fff;
+	}
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
+	&:disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
 }
 
 .tagBtn {
-  display: inline-block;
-  margin-right: 10px;
-  background-color: $action-color;
-  color: rgba(20, 20, 20, 1);
-  padding: 3px 10px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  font-size: 14px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	background-color: $action-color;
+	color: rgba(20, 20, 20, 1);
+	padding: 3px 10px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	font-size: 14px;
 }
 
 .tagLink {
-  :hover {
-    font-weight: 600;
-  }
+	:hover {
+		font-weight: 600;
+	}
 }
 
 .tagsBox {
-  display: flex;
-  margin-bottom: 50px;
+	display: flex;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
 }
