@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 오늘의 와드 앱 기획 (1)
+title: 오늘의 와드 앱 기획
 date: Fri September 25 2020 18:39:20 GMT+0900
 author: Jang Taeyoung
 categories: etc
 ---
 
-> 애플리케이션 기획 과정 문서로 남기기
+> 애플리케이션 기획 과정 문서로 남기기 - Update (2020/10/14)
 
 ## 주제
 
@@ -58,13 +58,11 @@ categories: etc
 1. Django
 2. Django REST Framework
 
-> Update (2020/10/07)
-
 ## 진행 상황
 
 1. ~~Model~~
 2. ~~Serializer~~
-3. ViewSet (~~User~~, ~~Box~~, Wod, Schedule, Alert, Reservation, Membership)
+3. ViewSet (~~User~~, ~~Box~~, ~~Wod~~, ~~Schedule~~, Alert, ~~Reservation~~, Membership)
 4. API
    - Token
    - Box authentication
@@ -74,3 +72,12 @@ categories: etc
    - Wod
    - Schedule
 5. Fake data (django-seed)
+
+### Alert
+
+- #Issue: Push Notification <br />: 내 노트북 환경은 Window, 핸드폰은 IOS라서 Window Xcode를 사용해도 Push 알림 동작을 테스트하기가 쉽지가 않다. 따라서, Push 알림 대신 앱 내에서 TabNavigation의 옵션을 활용하는 방법으로 변경
+- 관리자가 보는 알림이랑 사용자가 보는 알림이랑 구별할 필요가 있다. User에게 연결된 알림을 만들려고 했으나 이럴 경우 관리자가 공지 하나를 만들 경우 박스에 소속된 유저의 수만큼 알림을 보게 된다.
+
+1. 공지랑 이벤트는 박스 소속으로, 메세지는 사용자 소속으로 filter로 모두 가져온 다음 created로 ordering
+2. 새로운 알림이 있는지 확인하는 API를 만든다? (params ?)
+3. 이렇게 되면 사용자 입장에서 박스 공지는 삭제가 안되는 문제가 발생 => 삭제가 필요없다면 ? user 소속인 알림들은 회원권이 만료되는 순간 모두 삭제 (MembershipViewSet에 조회시 만료되는 부분이 있는데 이때, 메세지들도 모두 삭제)
