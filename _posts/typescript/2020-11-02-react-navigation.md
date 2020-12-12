@@ -11,6 +11,8 @@ React Navigation is written with TypeScript and exports type definitions for Typ
 
 > 출처: https://reactnavigation.org/docs/typescript
 
+<br />
+
 ## Type checking the navigator
 
 route 이름과 파라미터들의 타입 체크를 위해서 첫 번째 할 일은 route 이름을 route 파라미터들에 매핑하는 타입 객체를 만드는 것이다. 예를 들어 root navigator 안에 Profile이라는 route가 있으며 파라미터값으로 userId 값을 가진다고 가정하면 다음과 같이 작성할 수 있다.
@@ -39,7 +41,7 @@ type RootStackParamList = {
 
 **undefined**는 아무런 값도 파라미터로 갖지 않는다는 뜻이다. **undefined**와 유니온 타입을 함께 사용할 경우 파라미터가 들어올 수도 있고 들어오지 않을 수도 있다는 것을 표현할 수 있다. 맵핑을 정의하고 난 후에는 Navigator에게 해당 맵핑을 사용할 거라고 알려줘야 하는데 이를 위해 다음과 같이 createXNavigator 함수의 제네릭으로 설정해준다.
 
-> Specifying undefined means that the route doesn't have params. A union type with undefined (e.g. SomeType | undefined) means that params are optional. <br /> After we have defined the mappings, we need to tell our navigator to use it. To do that, we can pass it as a generic to the createXNavigator functions:
+> Specifying undefined means that the route doesn't have params. A union type with undefined (e.g. SomeType or undefined) means that params are optional. <br /> After we have defined the mappings, we need to tell our navigator to use it. To do that, we can pass it as a generic to the createXNavigator functions:
 
 ```typescript
 import { createStackNavigator } from '@react-navigation/stack';
@@ -55,7 +57,7 @@ const RootStack = createStackNavigator<RootStackParamList>();
   <RootStack.Screen
     name="Profile"
     component={Profile}
-    initialParams={{ userId: user.id }}
+    initialParams={ userId: user.id }
   />
   <RootStack.Screen name="Feed" component={Feed} />
 </RootStack.Navigator>
@@ -63,7 +65,7 @@ const RootStack = createStackNavigator<RootStackParamList>();
 
 이는 Navigator와 Screen 컴포넌트들의 props에게 타입 체킹과 자동 완성 기능을 제공해줄 것이다.
 
-<br /><br />
+<br />
 
 ## Type checking screens
 
@@ -170,6 +172,7 @@ class ProfileScreen extends React.Component<Props> {
 
 > We recommend creating a separate types.tsx file where you keep the types and import them in your component files instead of repeating them in each file.
 
+<br />
 
 ## Nesting navigators
 
@@ -206,6 +209,8 @@ type ProfileScreenNavigationProp = CompositeNavigationProp<
 >;
 ```
 
+<br />
+
 ## Annotating useNavigation, useRoute
 
 hooks를 이용하여 navigation과 route prop를 가져와서 사용할 수 있는데 이때 타입 체크를 위해 다음과 같이 사용한다.
@@ -219,6 +224,7 @@ const route = useRoute<ProfileScreenRouteProp>();
 
 > It's important to note that this isn't completely type-safe because the type parameter you use may not be correct and we cannot statically verify it.
 
+<br />
 
 ## Annotating options and screenOptions
 
@@ -233,3 +239,5 @@ const options: StackNavigationOptions = {
   headerShown: false,
 }
 ```
+
+<br /><br />

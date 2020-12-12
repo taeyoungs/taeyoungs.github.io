@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 오늘의 와드 앱 - RN
-date: Fri September 25 2020 18:39:20 GMT+0900
+title: 오늘의 와드 앱 (2)
+date: Mon September 28 2020 18:39:20 GMT+0900
 author: Jang Taeyoung
 categories: etc
 ---

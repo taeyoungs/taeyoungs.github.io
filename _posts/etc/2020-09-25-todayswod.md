@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 오늘의 와드 앱 기획
+title: 오늘의 와드 앱 (1)
 date: Fri September 25 2020 18:39:20 GMT+0900
 author: Jang Taeyoung
 categories: etc
