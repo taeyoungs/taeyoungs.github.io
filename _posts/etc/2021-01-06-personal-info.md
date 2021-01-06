@@ -1,7 +1,7 @@
 ---
 layout: post
 title: App Store 개인정보 처리 방침
-date: Wed January 6 2021 18:39:20 GMT+0900
+date: Wed January 6 2021 10:01:20 GMT+0900
 author: Jang Taeyoung
 categories: etc
 ---
